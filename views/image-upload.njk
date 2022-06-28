@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+{% block content %}
+    <<div id="import">
+    <h2>Import Image</h2>
+    
+    <form class="custom-file-upload" action = "/upload" method = "POST" enctype = "multipart/form-data">
+    <label>
+    <input name = "myImage" type="file">
+    <h3>Drag or click here</h3>
+    </label>
+    <button type="submit" onclick="upload()" >Submit</button>
+    </form>
+    </div>
+    <div id="sponsors">
+        <img src="/assets/Spotreality.png" alt="spotreality">
+        <img src="/assets/greatminds_6_finallogo.png" alt="greatminds">
+    </div>
+    
+{% endblock content %}

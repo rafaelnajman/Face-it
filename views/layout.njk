@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture perfection</title>
+    <link rel="stylesheet" href="static/style.css">
+    {% block head %}
+    {% endblock head %}
+    
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        
+            <a href="/"><img src="/assets/logo.png" alt="logo" ></a>
+                <a id="about" href="/about">About us</a>
+                <a href="/Contact">Contact us</a>
+    </header>
+       
+
+       {% block content %}
+       {% endblock content %}
+       </div>
+       <footer>Made with Love <strong>and coffee </strong> ☕</footer>
+       <script src="/scripts.js"></script>
+      
+</body>

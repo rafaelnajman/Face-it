@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='style.css') }}">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            
+                <a href="/"><img src="/assets/logo.png" alt="logo" ></a>
+                    <a id="about" href="/about">About us</a>
+                    <a href="/Contact">Contact us</a>
+        </header>
+        
+        <div class = "results">
+            <div class="result-image">
+                <img src="assets/images/myImage.jpg" alt="data-image">
+            </div>
+            <div class="result-data-block">
+                <div>
+                    <div class = "results-data"><h2 style="font-size: 3.3rem; color: gray;font-weight: 300;">Picture Status:</h2>
+                    <h2>{{ problem }}</h2></div>
+                    <div id="line"></div>
+                </div>
+            <div class = "results-data"><p>Accuracy: {{ acertive * 100 }}%</p></div>
+            </div>
+
+        </div>
+           
+           </div>
+           <footer>Made with Love <strong>and coffee ☕</strong> </footer>
+           <script src="/public/scripts.js"></script>
+
+</body>
+</html>
